@@ -1,0 +1,56 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem;
+}
+
+.calculator {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    max-width: 320px;
+    margin: auto;
+    margin-top: 7rem;
+}
+
+.result-panel {
+    grid-column: 1 / span 4;
+    background-color: #d8d8d8;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.keypad {
+    grid-column: 1 / span 4;
+    margin-top: 10px;
+}
+
+.keypad ion-row {
+    margin-bottom: 10px;
+}
+
+.keypad ion-col {
+    padding: 0;
+}
+
+.keypad ion-button {
+    height: 60px;
+    font-size: 20px;
+    border-radius: 5px;
+    background: yellow;
+    color: #000;
+}
+
+.keypad ion-button:active {
+    background: #f9d900;
+}
